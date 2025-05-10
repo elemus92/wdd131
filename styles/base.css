@@ -40,10 +40,17 @@ nav a:hover {
 	color: yellow;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-}  
+.card {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.card2 {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
 
 @media (min-width: 640px) {
 	nav ul {
