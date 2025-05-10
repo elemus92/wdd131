@@ -1,0 +1,21 @@
+.nav {
+    background-color: 365454f;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.active {
+    color: yellow;
+}
+
