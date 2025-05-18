@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,66 +11,53 @@ body {
 	font-family: "Sansita", sans-serif;
 }
 
-/* mobile **************************/
-header {
-	background-color: #bbb;
-	display: grid;
-	grid-gap: 1rem;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 30px #333;
-}
-
-header,
-main {
-	margin: 0 auto;
-}
-
 h1 {
+	background-color: #ddd;
+	padding: 1rem;
+	border: 1px solid rgb(0 0 0 / 10%);
 	font-size: 2rem;
+	text-align: center;
 }
 
 nav {
 	background-color: #36454f;
+	margin: 0 auto;
+	max-width: 800px;
 }
-
 nav ul {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
+	list-style-type: none;
 }
-
 nav a {
 	display: block;
 	color: #fff;
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
-	font-size: larger;
 }
 
 nav a:hover {
-	text-decoration: underline double;
-	background-color: #eee;
-	color: #000;
+	text-decoration: overline;
 }
 
 .active {
 	color: yellow;
 }
 
-/* Larger Views ******************************/
-@media (min-width: 740px) {
-	header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+
+/* larger/wider views **************************/
+@media (min-width: 640px) {
 	nav ul {
-		justify-content: flex-end;
-		flex-direction: row;
+		display: flex;
 	}
-	nav a {
-		flex: 1 1 100%;
-	}
+
+	nav ul li {
+		flex: 1 0 auto; 
 }
