@@ -1,57 +1,62 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
+body {
+	font-family: "Sansita", sans-serif;
+}
+
+/* mobile **************************/
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
+	background-color: #bbb;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	background-color: #36454f;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+nav a:hover {
+	text-decoration: underline double;
+	background-color: #eee;
+	color: #000;
 }
 
-h1 span {
-    color: #96C;
+.active {
+	color: yellow;
 }
 
-main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    flex: 1;
-}
-
-.about-me, .web-resources {
-    width: 48%;
-}
-
-footer {
-    background-color: #f8f8f8;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.8em;
-    color: #666;
-}
-
+/* Larger Views ******************************/
 @media (min-width: 740px) {
 	header {
 		display: flex;
@@ -66,4 +71,3 @@ footer {
 		flex: 1 1 100%;
 	}
 }
-
